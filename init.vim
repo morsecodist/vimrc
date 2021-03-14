@@ -28,6 +28,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'broadinstitute/vim-wdl'
 Plug 'arcticicestudio/nord-vim'
 Plug 'takac/vim-hardtime'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 call plug#end()
 
