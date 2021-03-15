@@ -29,6 +29,7 @@ Plug 'broadinstitute/vim-wdl'
 Plug 'arcticicestudio/nord-vim'
 Plug 'takac/vim-hardtime'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -43,4 +44,5 @@ set splitbelow
 au BufRead,BufNewFile *.hcl set filetype=terraform
 
 let g:hardtime_default_on = 1
+let g:vim_markdown_folding_disabled = 1
 
