@@ -1,7 +1,9 @@
 {
     "languageserver": {
         "terraform": {
-            "command": "terraform-lsp",
+            "external": true,
+            "command": "terraform-ls",
+            "args": ["serve"],
             "filetypes": [
                 "terraform",
                 "tf"
@@ -10,5 +12,6 @@
             "settings": {}
         }
     },
-    "rust-analyzer.rust-client.channel": "nightly"
+    "rust-analyzer.rust-client.channel": "nightly",
+    "diagnostic.virtualText": true
 }
