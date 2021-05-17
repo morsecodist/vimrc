@@ -30,6 +30,12 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'takac/vim-hardtime'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/ReplaceWithRegister'
+" required for vim-textobj-indent
+Plug 'kana/vim-textobj-user'
+" ai
+Plug 'kana/vim-textobj-indent'
 
 call plug#end()
 
@@ -43,6 +49,6 @@ set splitbelow
 
 au BufRead,BufNewFile *.hcl set filetype=terraform
 
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
 let g:vim_markdown_folding_disabled = 1
 
