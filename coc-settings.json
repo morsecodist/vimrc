@@ -10,8 +10,29 @@
             ],
             "initializationOptions": {},
             "settings": {}
+        },
+        "ccls": {
+          "command": "ccls",
+          "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+          "rootPatterns": [
+              ".ccls",
+              "compile_commands.json",
+              ".vim/",
+              ".git/",
+              ".hg/"
+          ],
+          "initializationOptions": {
+            "cache": {
+                "directory": "/tmp/ccls"
+            },
+            "client": {
+              "snippetSupport": true
+            }
+          }
         }
     },
     "rust-analyzer.rust-client.channel": "nightly",
-    "diagnostic.virtualText": true
+    "diagnostic.virtualText": true,
+    "python.formatting.provider": "flake8",
+    "python.linting.flake8Enabled": true
 }

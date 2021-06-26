@@ -1,7 +1,11 @@
 set number
 set relativenumber
 set noswapfile
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set mouse=a
+set nobackup
+set hidden
+set ignorecase smartcase
 set termguicolors
 
 let g:coc_global_extensions = [
@@ -36,11 +40,14 @@ Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'kana/vim-textobj-user'
 " ai
 Plug 'kana/vim-textobj-indent'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
-let ayucolor="dark"
-colorscheme nord
+let ayucolor="mirage"
+colorscheme ayu
 
 syntax enable
 filetype plugin indent on
