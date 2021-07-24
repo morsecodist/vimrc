@@ -8,6 +8,7 @@ set hidden
 set ignorecase smartcase
 set termguicolors
 
+
 let g:coc_global_extensions = [
       \ 'coc-go',
       \ 'coc-pyright',
