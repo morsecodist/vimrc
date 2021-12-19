@@ -1,7 +1,6 @@
 {
     "languageserver": {
         "terraform": {
-            "external": true,
             "command": "terraform-ls",
             "args": ["serve"],
             "filetypes": [
@@ -10,25 +9,6 @@
             ],
             "initializationOptions": {},
             "settings": {}
-        },
-        "ccls": {
-          "command": "ccls",
-          "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-          "rootPatterns": [
-              ".ccls",
-              "compile_commands.json",
-              ".vim/",
-              ".git/",
-              ".hg/"
-          ],
-          "initializationOptions": {
-            "cache": {
-                "directory": "/tmp/ccls"
-            },
-            "client": {
-              "snippetSupport": true
-            }
-          }
         }
     },
     "rust-analyzer.rust-client.channel": "nightly",
